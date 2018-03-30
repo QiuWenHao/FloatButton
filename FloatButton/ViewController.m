@@ -15,11 +15,13 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewDidAppear:(BOOL)animated {
     
     /***要在keyWindow初始化完成后调用[FloatViewManager showFloatView]，这时候才能添加**/
     [FloatViewManager showFloatView];
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning {
